@@ -2,6 +2,5 @@
 build
 .git
 .gitignore
-Dockerfile
 README.md
 *.iml
