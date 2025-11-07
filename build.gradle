@@ -13,6 +13,10 @@ java {
     }
 }
 
+springBoot {
+    mainClass = 'com.capestone.Main'
+}
+
 repositories {
     mavenCentral()
 }
