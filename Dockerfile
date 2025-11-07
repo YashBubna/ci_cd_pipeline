@@ -1,5 +1,5 @@
 FROM eclipse-temurin:21-jre
-WORKDIR /app
-COPY build/libs/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+VOLUME /app
+COPY build/libs/ci_cd_pipeline-1.0-SNAPSHOT.jar /app.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "/app.jar"]
