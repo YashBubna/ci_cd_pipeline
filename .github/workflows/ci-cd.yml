@@ -37,6 +37,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Push Docker image
-        run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/hello-docker:latest .
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/hello-docker:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/springboot-cicd:latest
